@@ -1,27 +1,53 @@
-name: Build and Deploy to gh-pages
+name: Deploy static content to Pages
 
 on:
+  # Runs on pushes targeting the default branch
   push:
     branches:
-      - main # Change this to your main branch name
+      - main
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-      - name: Set-up Node
-        uses: actions/setup-node@v2
+        uses: actions/checkout@v2 # Use v2 here
+      - name: Setup Node.js
+        uses: actions/setup-node@v2 # Set up Node.js environment
         with:
-          node-version: "18"
-      - run: npm install
-      - run: npm run build
-      - name: Deploy
-        uses: crazy-max/ghaction-github-pages@v1
+          node-version: '18' # Use the Node.js version you need
+      - name: Install dependencies and build
+        run: |
+          npm install
+          npm run build # Adjust the actual npm build command if needed
+      - name: Set Pages directory to /dist
+        run: |
+          echo "dist" > .github/workflows/CUSTOM_PAGES_PATH # Create a file with the custom Pages path
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
         with:
-          target_branch: gh-pages
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          pages-token: ${{ secrets.ACCESS_TOKEN }}
+          pages-branch: gh-pages
+          path: dist # This is the directory to deploy
+
 
