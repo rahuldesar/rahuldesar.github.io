@@ -17,7 +17,6 @@ const Blur = () => {
       if (clientX !== undefined && clientY !== undefined) {
         let blob = blobRef.current;
         const top = clientY + scrollTop;
-        console.log(top);
         blob.animate(
           {
             left: `${clientX}px`,
