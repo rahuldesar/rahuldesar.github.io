@@ -3,22 +3,28 @@ import RandomizeWords from "@components/RandomizeWords";
 const Homepage = () => {
   return (
     <section className=" pt-8 sm:pt-20">
-      <div className="container mx-auto items-center  sm:min-h-screen">
+      <div className="container mx-auto items-center">
         <div className="flex flex-wrap items-start">
-          <div className="flex flex-col pt-5 md:w-1/2">
-            <h2 className="hover:bg-pos-10 mb-6 bg-gradient-to-l from-catDarkGreen via-catDarkOverlay1 to-catDarkLavender bg-size-200 bg-clip-text bg-pos-0 text-3xl font-bold text-transparent drop-shadow-2xl transition-all duration-700 hover:bg-pos-100 sm:text-5xl">
+          <div className="flex flex-col pt-5 md:w-1/2 lg:pr-36">
+            <h2 className="hover:bg-pos-10 mb-5 bg-gradient-to-l from-catDarkGreen via-catDarkOverlay1 to-catDarkLavender bg-size-200 bg-clip-text bg-pos-0 text-3xl font-bold text-transparent drop-shadow-2xl transition-all duration-700 hover:bg-pos-100 sm:text-5xl">
               Rahul Deshar
             </h2>
 
-            <h3 className="drop-shadow-2x mb-1 text-2xl font-bold sm:text-3xl">
+            <h3 className="drop-shadow-2x text-xl font-bold sm:text-xl">
               <span className="inline-block text-catDarkGreen">
                 <RandomizeWords sourceWord="React Developer" />
               </span>
             </h3>
-            <h4 className="drop-shadow-2x mb-8 text-xl font-bold sm:text-xl">
+            <h4 className="drop-shadow-2x mb-4 text-lg font-bold sm:text-lg">
               at Truemark Technology
             </h4>
-            <h3 className="drop-shadow-2x mb-2 animate-bounce text-xl font-bold sm:text-2xl">
+
+            <p>
+              Passionate React developer with a flair for full-stack solutions.
+              Proficient in CI/CD, I bring a design-oriented mindset to create
+              seamless, user-centric digital experiences.
+            </p>
+            <h3 className="drop-shadow-2x mt-8 animate-bounce text-xl font-bold sm:text-2xl">
               SITE: UNDER CONSTRUCTION
             </h3>
             <p className="mb-8 text-lg text-white">
@@ -35,18 +41,21 @@ const Homepage = () => {
               Pill
             </span> */}
           <div className="flex flex-col items-start  md:w-1/2">
-            <h2 className="title-font mb-4 mt-4 text-2xl font-medium sm:text-3xl">
+            <h2 className="title-font text-1xl mb-4 mt-4 block w-full text-center font-medium sm:text-2xl">
               About me
             </h2>
             <p className="mb-8 leading-relaxed">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae
               quo quae soluta nulla illum debitis, fugit eius perspiciatis
               laborum aliquid sapiente voluptas id, maxime odio alias veritatis
-              repellendus, consequatur maiores. Soluta sint, pariatur itaque
-              fugiat voluptatem sunt dolores veniam quae quibusdam quidem
-              aliquam suscipit unde sapiente quasi impedit consequatur neque
-              doloremque non reprehenderit. Omnis amet facere quaerat quos aut
-              magni!
+              repellendus, consequatur maiores.
+            </p>
+
+            <p className="mb-8 leading-relaxed">
+              Soluta sint, pariatur itaque fugiat voluptatem sunt dolores veniam
+              quae quibusdam quidem aliquam suscipit unde sapiente quasi impedit
+              consequatur neque doloremque non reprehenderit. Omnis amet facere
+              quaerat quos aut magni!
             </p>
             <div className="mb-4 mt-auto flex w-full flex-wrap items-center border-b-2 border-gray-100 pb-4">
               <a className="inline-flex items-center text-indigo-500">
