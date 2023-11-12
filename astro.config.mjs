@@ -10,7 +10,7 @@ export default defineConfig({
   base: "/",
   integrations: [
     tailwind({
-        applyBaseStyles: false,
+      applyBaseStyles: false,
     }),
     react(),
     partytown({
