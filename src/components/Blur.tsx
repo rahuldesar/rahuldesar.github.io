@@ -33,11 +33,11 @@ const Blur = () => {
     <div className="absolute inset-0 overflow-hidden bg-background ">
       <div
         ref={blobRef}
-        className="translate-middle absolute aspect-square h-0 animate-custom-rotate rounded-full bg-gradient-to-r from-green-400  to-red-500  opacity-40 ease-in-out "
+        className="translate-middle absolute aspect-square h-0 animate-custom-rotate rounded-full bg-gradient-to-r from-green-400  to-red-500 opacity-30 ease-in-out"
       ></div>
       <div
         id="blur"
-        className="absolute z-10 h-full w-full backdrop-blur-[100px]"
+        className="absolute z-10 h-full w-full backdrop-blur-[120px]"
       ></div>
     </div>
   );

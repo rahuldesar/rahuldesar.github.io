@@ -81,6 +81,15 @@ module.exports = {
         catLightCrust: "#dce0e8",
       },
     },
+    container: {
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "5rem",
+        xl: "7rem",
+        "2xl": "9rem",
+      },
+    },
   },
   plugins: [],
 };
