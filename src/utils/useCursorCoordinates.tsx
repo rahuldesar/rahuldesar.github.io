@@ -1,7 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 
 export default function useCursorCoordinates() {
-  const [cursorCoordinates, setCursorCoordinates] = useState<{ clientX: number; clientY: number }>({ clientX: 0, clientY: 0 });
+  const [cursorCoordinates, setCursorCoordinates] = useState<{
+    clientX: any;
+    clientY: any;
+  }>({ clientX: 0, clientY: 0 });
 
   useEffect(() => {
     function getMouseCoordinates(event: MouseEvent) {
@@ -15,7 +18,6 @@ export default function useCursorCoordinates() {
       document.removeEventListener("pointermove", getMouseCoordinates);
     };
   }, []);
-
 
   return cursorCoordinates;
 }

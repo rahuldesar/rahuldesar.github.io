@@ -5,11 +5,11 @@ interface Props {
   title: string;
 }
 
-import "@assets/styles/global.css"
+import "@assets/styles/global.css";
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,5 +23,4 @@ const { title } = Astro.props;
   <body class="bg-background font-Roboto">
     <slot />
   </body>
-  
 </html>

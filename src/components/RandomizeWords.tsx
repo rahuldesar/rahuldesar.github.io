@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const RandomizeWords = ({ sourceWord }: { sourceWord: string }) => {
   const [isAnimating, setAnimating] = useState(false);
 
   const handleRandomizeWords = (e: any) => {
     if (isAnimating) {
-      return; 
+      return;
     }
 
     setAnimating(true);
@@ -27,7 +27,7 @@ const RandomizeWords = ({ sourceWord }: { sourceWord: string }) => {
 
       if (iterations >= word.length) {
         clearInterval(interval);
-        setAnimating(false); 
+        setAnimating(false);
       }
 
       iterations += 1 / 3;
