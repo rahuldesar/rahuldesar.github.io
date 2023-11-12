@@ -1,16 +1,12 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import bannerImage from "@assets/images/undraw_coding.svg";
-import Blur from "@components/Blur";
-import RandomizeWord from "@components/RandomizeWords";
-import Homepage from "@components/Homepage/Homepage";
+import Blur from "@components/UI-modifiers/Blur";
+import Homepage from "@components/Homepage/Homepage.astro";
 ---
 
 <Layout title="Home | Rahul Deshar">
-  <main class="flex min-h-screen flex-col">
-    <Blur client:load />
-    <div class="absolute z-10">
-      <Homepage client:load />
-    </div>
+  <main class="relative flex h-full min-h-screen flex-col">
+    <Blur client:only />
+    <Homepage />
   </main>
 </Layout>

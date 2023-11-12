@@ -1,0 +1,42 @@
+---
+import RandomizeWords from "@components/UI-modifiers/RandomizeWords";
+---
+
+<astro:template>
+  <div class="pt-8 sm:pt-20">
+    <h2
+      class="hover:bg-pos-10 mb-5 bg-gradient-to-l from-catDarkGreen via-catDarkOverlay1 to-catDarkLavender bg-size-200 bg-clip-text bg-pos-0 text-3xl font-bold text-transparent drop-shadow-2xl transition-all duration-700 hover:bg-pos-100 sm:text-5xl"
+    >
+      Rahul Deshar
+    </h2>
+
+    <h3 class="drop-shadow-2x text-xl font-bold sm:text-xl">
+      <span class="inline-block text-catDarkGreen">
+        <RandomizeWords sourceWord="React Developer" client:load />
+      </span>
+    </h3>
+    <h4 class="drop-shadow-2x mb-4 text-lg font-bold sm:text-lg">
+      at Truemark Technology
+    </h4>
+
+    <p>
+      Passionate React developer with a flair for full-stack solutions.
+      Proficient in CI/CD, I bring a design-oriented mindset to create seamless,
+      user-centric digital experiences.
+    </p>
+    <h3
+      class="drop-shadow-2x mt-8 animate-bounce text-xl font-bold sm:text-2xl"
+    >
+      SITE: UNDER CONSTRUCTION
+    </h3>
+    <p class="mb-8 text-lg text-white">
+      Meanwhile check this{" "}
+      <a
+        href="https://notes.rahuldeshar.com.np"
+        class="animate-pulse font-bold text-blue-500 hover:animate-none hover:text-catDarkSky"
+      >
+        cheatsheet page
+      </a>
+    </p>
+  </div>
+</astro:template>
