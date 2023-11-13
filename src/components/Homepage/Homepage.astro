@@ -10,10 +10,12 @@ import BuiltWith from "./BuiltWith.astro";
   <section class="">
     <div class="container mx-auto items-center pb-12">
       <div class="flex flex-wrap items-start">
-        <div class="flex flex-col pt-5 md:w-5/12 md:pr-28 md:sticky md:top-0">
+        <div
+          class="flex flex-col pt-5 md:sticky md:top-0 md:w-1/2 md:pr-28 lg:w-5/12"
+        >
           <PersonalSection />
         </div>
-        <div class="flex flex-col items-start md:w-7/12 pt-8 sm:pt-20">
+        <div class="flex flex-col items-start pt-8 sm:pt-20 md:w-1/2 lg:w-7/12">
           <AboutMe />
           <Experiences />
           <Projects />

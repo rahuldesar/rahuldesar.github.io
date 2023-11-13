@@ -8,8 +8,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format-old": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\" \"src/**/*.mdx\" \"src/**/*.astro\" \"src/**/*.js\" \"src/**/*.jsx\"",
-    "format": "prettier --write ."
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.tsx\" \"src/**/*.mdx\" \"src/**/*.astro\" \"src/**/*.js\" \"src/**/*.jsx\"",
+    "format-old": "prettier --write ./*"
   },
   "dependencies": {
     "@astrojs/partytown": "^2.0.2",
