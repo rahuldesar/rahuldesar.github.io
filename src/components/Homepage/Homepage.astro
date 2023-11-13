@@ -1,21 +1,23 @@
 ---
 import PersonalSection from "./PersonalSection.astro";
 import AboutMe from "./AboutMe.astro";
+import Experiences from "./Experiences.astro";
+import Projects from "./Projects.astro";
+import BuiltWith from "./BuiltWith.astro";
 ---
 
 <div class="relative z-20">
   <section class="">
-    <div class="container mx-auto items-center">
+    <div class="container mx-auto items-center pb-12">
       <div class="flex flex-wrap items-start">
-        <div class="flex flex-col pt-5 md:w-1/2 md:pr-36 md:sticky md:top-0">
+        <div class="flex flex-col pt-5 md:w-5/12 md:pr-28 md:sticky md:top-0">
           <PersonalSection />
         </div>
-        <div class="flex flex-col items-start md:w-1/2 pt-8 sm:pt-20">
+        <div class="flex flex-col items-start md:w-7/12 pt-8 sm:pt-20">
           <AboutMe />
-          <AboutMe />
-          <AboutMe />
-          <AboutMe />
-          <AboutMe />
+          <Experiences />
+          <Projects />
+          <BuiltWith />
         </div>
       </div>
     </div>
