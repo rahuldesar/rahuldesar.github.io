@@ -1,9 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
-  content: [
-    "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
-  ],
+  content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     container: {
       padding: {
@@ -92,7 +90,7 @@ module.exports = {
         catLightMantle: "#e6e9ef",
         catLightCrust: "#dce0e8",
 
-// ASTRO DEFUALTS
+        // ASTRO DEFUALTS
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
