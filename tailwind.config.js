@@ -7,7 +7,7 @@ module.exports = {
         360: "360deg",
       },
       animation: {
-        "custom-rotate": "rotate 3s linear infinite",
+        "custom-rotate": "rotate 2s linear infinite",
       },
       fontFamily: {
         Roboto: ["Roboto", "sans-serif"],
