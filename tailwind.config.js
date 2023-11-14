@@ -2,7 +2,6 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    "./@/shadcn-components/**/*.{ts,tsx}",
     "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
   ],
   theme: {
@@ -92,6 +91,8 @@ module.exports = {
         catLightBase: "#eff1f5",
         catLightMantle: "#e6e9ef",
         catLightCrust: "#dce0e8",
+
+// ASTRO DEFUALTS
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

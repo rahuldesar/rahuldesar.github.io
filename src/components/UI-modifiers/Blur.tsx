@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect } from "react";
 import useCursorCoordinates from "@utils/useCursorCoordinates";
 import useScrollTop from "@utils/useScrollTop";
 
